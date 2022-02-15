@@ -1,17 +1,18 @@
 {
-  "private": true,
-  "scripts": {
-    "dev": "slidev --open",
-    "build": "slidev build",
-    "export": "slidev export",
-    "pub": "slidev build --base <repo name> && cp ./404.html ./dist/404.html && node ./modIndex.js && gh-pages -d dist"
-  },
-  "dependencies": {
-    "@slidev/cli": "^0.19.8",
-    "@slidev/theme-default": "*",
-    "@slidev/theme-seriph": "*",
-    "gh-pages": "^3.2.0",
-    "node-html-parser": "^3.3.4"
-  },
-  "name": "slidev-gh-page-template"
+    "private": true,
+    "scripts": {
+        "dev": "slidev --open",
+        "build": "slidev build",
+        "export": "slidev export",
+        "pub": "slidev build --base /<repo name>/ && cp ./404.html ./dist/404.html && node ./modIndex.js && gh-pages -d dist"
+    },
+    "dependencies": {
+        "@slidev/cli": "^0.28.5",
+        "@slidev/theme-default": "*",
+        "@slidev/theme-seriph": "*",
+        "gh-pages": "^3.2.0",
+        "node-html-parser": "^3.3.4",
+        "playwright-chromium": "^1.19.0"
+    },
+    "name": "slidev-gh-page-template"
 }
